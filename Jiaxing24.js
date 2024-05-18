@@ -42,6 +42,16 @@ shakespeareGarden.bindPopup(`
 `).openPopup();
 
 
+// Add a marker to the map for New York City
+var turtlePond = L.marker([40.779590240437635, -73.9680347900087]).addTo(map);
+
+// Add a popup to the marker
+turtlePond.bindPopup(`
+    <b>Turtle Pond</b><br>Be careful! Turtles inside!<br>
+    <img src="https://JohnasonY.github.io/GEG212Jiaxing/images/turtlePond.jpg" style="width: 100px; height: auto;">
+`).openPopup();
+
+
 
 // Load the GeoJSON line file
 fetch('https://JohnasonY.github.io/GEG212Jiaxing/Jiaxing_eveningRoute.geojson')
