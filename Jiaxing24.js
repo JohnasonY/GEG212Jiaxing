@@ -121,4 +121,12 @@ Pier3Plaza.bindPopup(`
     <img src="https://JohnasonY.github.io/GEG212Jiaxing/images/Pier3Plaza.jpg" style="width: 100px; height: auto;">
 `).openPopup();
 
+var Pier4Beach = L.marker([40.69664531693869, -73.99933055409025]).addTo(map);
+
+// Add a popup to the marker
+Pier4Beach.bindPopup(`
+    <b>Pier 4 Beach</b><br>A good place for sea-hunting in the afternoon!<br>
+    <img src="https://JohnasonY.github.io/GEG212Jiaxing/images/Pier4Beach.jpg" style="width: 100px; height: auto;">
+`).openPopup();
+
 
