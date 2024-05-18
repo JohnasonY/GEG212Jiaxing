@@ -150,4 +150,23 @@ fetch('https://JohnasonY.github.io/GEG212Jiaxing/eveningRouteFootprints.geojson'
     console.error('Error loading GeoJSON file:', error);
 });
 
+// Load the GeoJSON polygon file
+fetch('https://JohnasonY.github.io/GEG212Jiaxing/daytimeRouteFootprints.geojson')
+.then(response => response.json())
+.then(geojson => {
+    // Customize the style of the polygon
+    var polygonStyle = {
+        fillColor: 'black', // Fill color
+        fillOpacity: 0.5, // Fill opacity
+    };
+
+    // Add the GeoJSON polygon to the map
+    L.geoJSON(geojson, {
+        style: polygonStyle
+    }).addTo(map);
+})
+.catch(error => {
+    console.error('Error loading GeoJSON file:', error);
+});
+
 
