@@ -32,6 +32,17 @@ fetch('https://JohnasonY.github.io/GEG212Jiaxing/Jiaxing_daytimeRoute.geojson')
         console.error('Error loading GeoJSON file:', error);
     });
 
+// Add a marker to the map for New York City
+var shakespeareGarden = L.marker([40.77975447485025, -73.96988340219168]).addTo(map);
+
+// Add a popup to the marker
+luigismarker.bindPopup(`
+    <b>Luigi's Pizza</b><br>Best pizza on Dekalb Ave<br>
+    <img src="https://aurashktest.github.io/aurashktest/images/luigis.png" style="width: 100px; height: auto;">
+`).openPopup();
+
+
+
 // Load the GeoJSON line file
 fetch('https://JohnasonY.github.io/GEG212Jiaxing/Jiaxing_eveningRoute.geojson')
 .then(response => response.json())
