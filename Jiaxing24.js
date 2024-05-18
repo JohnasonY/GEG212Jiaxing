@@ -11,3 +11,23 @@ var marker = L.marker([40.58159752539692, -74.16488220269812]).addTo(map);
 
 // Add a popup to the marker
 marker.bindPopup("<b>Hello New York City!</b><br>This is a GameStop store.").openPopup();
+
+// Load the GeoJSON line file
+fetch('https://JohnasonY.github.io/GEG212Jiaxing/Jiaxing_daytimeRoute.geojson')
+    .then(response => response.json())
+    .then(geojson => {
+        // Customize the style of the line
+        var lineStyle = {
+            color: 'red', // Change color as needed
+            weight: 5, // Change weight as needed
+            opacity: 0.7 // Change opacity as needed
+        };
+
+        // Add the GeoJSON line to the map
+        L.geoJSON(geojson, {
+            style: lineStyle
+        }).addTo(map);
+    })
+    .catch(error => {
+        console.error('Error loading GeoJSON file:', error);
+    });
