@@ -38,7 +38,7 @@ var shakespeareGarden = L.marker([40.77975447485025, -73.96988340219168]).addTo(
 // Add a popup to the marker
 shakespeareGarden.bindPopup(`
     <b>Shakespear Garden</b><br>Impressive garden in Central Park<br>
-    <img src="https://aurashktest.github.io/aurashktest/images/luigis.png" style="width: 100px; height: auto;">
+    <img src="https://JohnasonY.github.io/GEG212Jiaxing/images/ShakespeareGarden.jpg" style="width: 100px; height: auto;">
 `).openPopup();
 
 
