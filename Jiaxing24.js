@@ -112,3 +112,13 @@ BrooklynBridgePark.bindPopup(`
     <img src="https://JohnasonY.github.io/GEG212Jiaxing/images/BrooklynBridgePark.jpg" style="width: 100px; height: auto;">
 `).openPopup();
 
+// Add a marker to the map for New York City
+var Pier3Plaza = L.marker([40.69805460525363, -73.99968349015637]).addTo(map);
+
+// Add a popup to the marker
+Pier3Plaza.bindPopup(`
+    <b>Pier 3 Plaza</b><br>A large lawn for Walking your dog after dinner!<br>
+    <img src="https://JohnasonY.github.io/GEG212Jiaxing/images/Pier3Plaza.jpg" style="width: 100px; height: auto;">
+`).openPopup();
+
+
