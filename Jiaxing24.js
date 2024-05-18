@@ -31,3 +31,24 @@ fetch('https://JohnasonY.github.io/GEG212Jiaxing/Jiaxing_daytimeRoute.geojson')
     .catch(error => {
         console.error('Error loading GeoJSON file:', error);
     });
+
+// Load the GeoJSON line file
+fetch('https://JohnasonY.github.io/GEG212Jiaxing/Jiaxing_eveningRoute.geojson')
+.then(response => response.json())
+.then(geojson => {
+    // Customize the style of the line
+    var lineStyle = {
+        color: 'yellow', // Change color as needed
+        weight: 5, // Change weight as needed
+        opacity: 0.7 // Change opacity as needed
+    };
+
+    // Add the GeoJSON line to the map
+    L.geoJSON(geojson, {
+        style: lineStyle
+    }).addTo(map);
+})
+.catch(error => {
+    console.error('Error loading GeoJSON file:', error);
+});
+
