@@ -93,3 +93,12 @@ fetch('https://JohnasonY.github.io/GEG212Jiaxing/Jiaxing_eveningRoute.geojson')
     console.error('Error loading GeoJSON file:', error);
 });
 
+// Add a marker to the map for New York City
+var GraniteProspect = L.marker([40.70203826911997, -73.9974394296304]).addTo(map);
+
+// Add a popup to the marker
+GraniteProspect.bindPopup(`
+    <b>Granite Prospect</b><br>Wonderful view to enjoy evening Brooklyn bridge!<br>
+    <img src="https://JohnasonY.github.io/GEG212Jiaxing/images/GraniteProspect.jpg" style="width: 100px; height: auto;">
+`).openPopup();
+
