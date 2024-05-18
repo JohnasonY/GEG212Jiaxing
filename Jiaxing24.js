@@ -18,7 +18,7 @@ fetch('https://JohnasonY.github.io/GEG212Jiaxing/Jiaxing_daytimeRoute.geojson')
     .then(geojson => {
         // Customize the style of the line
         var lineStyle = {
-            color: 'red', // Change color as needed
+            color: 'blue', // Change color as needed
             weight: 5, // Change weight as needed
             opacity: 0.7 // Change opacity as needed
         };
