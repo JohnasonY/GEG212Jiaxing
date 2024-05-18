@@ -61,6 +61,15 @@ MetropolitanMuseum.bindPopup(`
 `).openPopup();
 
 
+// Add a marker to the map for New York City
+var DelacorteTheater = L.marker([40.780288455109165, -73.96879867224547]).addTo(map);
+
+// Add a popup to the marker
+DelacorteTheater.bindPopup(`
+    <b>Delacorte Theater</b><br>Free summertime performances of Shakespeare!<br>
+    <img src="https://JohnasonY.github.io/GEG212Jiaxing/images/DelacorteTheater.jpg" style="width: 100px; height: auto;">
+`).openPopup();
+
 
 
 
