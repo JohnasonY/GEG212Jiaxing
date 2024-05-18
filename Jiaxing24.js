@@ -94,12 +94,12 @@ fetch('https://JohnasonY.github.io/GEG212Jiaxing/Jiaxing_eveningRoute.geojson')
 });
 
 // Add a marker to the map for New York City
-var GraniteProspect = L.marker([40.70203826911997, -73.9974394296304]).addTo(map);
+var BrooklynBridgeParkBasketballCourts = L.marker([40.69947203247762, -73.99875104097964]).addTo(map);
 
 // Add a popup to the marker
-GraniteProspect.bindPopup(`
-    <b>Granite Prospect</b><br>Wonderful view to enjoy evening Brooklyn bridge!<br>
-    <img src="https://JohnasonY.github.io/GEG212Jiaxing/images/GraniteProspect.jpg" style="width: 100px; height: auto;">
+BrooklynBridgeParkBasketballCourts.bindPopup(`
+    <b>Brooklyn Bridge Park Basketball Courts</b><br>Meet your friends with basketball!<br>
+    <img src="https://JohnasonY.github.io/GEG212Jiaxing/images/BrooklynBridgeParkBasketballCourts.jpg" style="width: 100px; height: auto;">
 `).openPopup();
 
 
