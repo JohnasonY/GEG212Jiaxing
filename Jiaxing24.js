@@ -102,3 +102,13 @@ GraniteProspect.bindPopup(`
     <img src="https://JohnasonY.github.io/GEG212Jiaxing/images/GraniteProspect.jpg" style="width: 100px; height: auto;">
 `).openPopup();
 
+
+// Add a marker to the map for New York City
+var BrooklynBridgePark = L.marker([40.70228846153691, -73.99643326731356]).addTo(map);
+
+// Add a popup to the marker
+BrooklynBridgePark.bindPopup(`
+    <b>Brooklyn Bridge Park</b><br>Wonderful view to enjoy evening Brooklyn bridge!<br>
+    <img src="https://JohnasonY.github.io/GEG212Jiaxing/images/BrooklynBridgePark.jpg" style="width: 100px; height: auto;">
+`).openPopup();
+
