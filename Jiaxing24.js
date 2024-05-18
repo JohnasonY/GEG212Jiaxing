@@ -193,7 +193,7 @@ function getFeatureStyle(feature) {
 
 
 // Load the GeoJSON polygon file
-fetch('https://aurashktest.github.io/aurashktest/hev.geojson')
+fetch('https://JohnasonY.github.io/GEG212Jiaxing/HurricaneEvacuationZones.geojson')
 .then(response => response.json())
 .then(geojson => {
     // Add the GeoJSON polygons to the map with customized style
