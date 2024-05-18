@@ -121,6 +121,7 @@ Pier3Plaza.bindPopup(`
     <img src="https://JohnasonY.github.io/GEG212Jiaxing/images/Pier3Plaza.jpg" style="width: 100px; height: auto;">
 `).openPopup();
 
+// Add a marker to the map for New York City
 var Pier4Beach = L.marker([40.69664531693869, -73.99933055409025]).addTo(map);
 
 // Add a popup to the marker
